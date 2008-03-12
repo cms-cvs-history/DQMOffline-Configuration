@@ -1,0 +1,4 @@
+include "DQMOffline/Muon/data/muonMonitors.cff"
+
+sequence DQMOffline = {muonMonitors}
+
