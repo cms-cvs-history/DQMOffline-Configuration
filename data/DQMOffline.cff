@@ -1,4 +1,4 @@
 include "DQMOffline/Muon/data/muonMonitors.cff"
-
-sequence DQMOffline = {muonMonitors}
+include "DQMOffline/Ecal/data/ecal_dqm_sourceclient-offline.cff"
+sequence DQMOffline = {ecal_dqm_sourceclient-offline1,ecal_dqm_sourceclient-offline2,muonMonitors}
 
