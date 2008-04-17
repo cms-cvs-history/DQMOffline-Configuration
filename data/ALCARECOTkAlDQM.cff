@@ -1,0 +1,82 @@
+#Below all DQM modules for TrackerAlignment AlCaRecos are instanciated.
+
+#TkAlZMuMu
+module ALCARECOTkAlZMuMuDQM = TrackMon from "DQM/TrackingMonitor/data/TrackingMonitor.cfi"
+  #names & designations  
+    replace ALCARECOTkAlZMuMuDQM.TrackProducer = "ALCARECOTkAlZMuMu"
+    replace ALCARECOTkAlZMuMuDQM.AlgoName = "ALCARECOTkAlZMuMu"
+    replace ALCARECOTkAlZMuMuDQM.FolderName = "TkAlZMuMu"
+  #sizes
+    replace ALCARECOTkAlZMuMuDQM.TkSizeBin = 5
+    replace ALCARECOTkAlZMuMuDQM.TkSizeMin = 0
+    replace ALCARECOTkAlZMuMuDQM.TkSizeMax = 5
+    replace ALCARECOTkAlZMuMuDQM.TrackPtBin = 100
+    replace ALCARECOTkAlZMuMuDQM.TrackPtMin = 0
+    replace ALCARECOTkAlZMuMuDQM.TrackPtMax = 100
+
+#TkAlJpsiMuMu
+module ALCARECOTkAlJpsiMuMuDQM = TrackMon from "DQM/TrackingMonitor/data/TrackingMonitor.cfi"
+  #names & designations    
+    replace ALCARECOTkAlJpsiMuMuDQM.TrackProducer = "ALCARECOTkAlJpsiMuMu"
+    replace ALCARECOTkAlJpsiMuMuDQM.AlgoName = "ALCARECOTkAlJpsiMuMu"
+    replace ALCARECOTkAlJpsiMuMuDQM.FolderName = "TkAlJpsiMuMu"
+  #sizes  
+    replace ALCARECOTkAlJpsiMuMuDQM.TkSizeBin = 5
+    replace ALCARECOTkAlJpsiMuMuDQM.TkSizeMin = 0
+    replace ALCARECOTkAlJpsiMuMuDQM.TkSizeMax = 5
+    replace ALCARECOTkAlJpsiMuMuDQM.TrackPtBin = 100
+    replace ALCARECOTkAlJpsiMuMuDQM.TrackPtMin = 0
+    replace ALCARECOTkAlJpsiMuMuDQM.TrackPtMax = 30
+
+#TkAlUpsilonMuMu
+module ALCARECOTkAlUpsilonMuMuDQM = TrackMon from "DQM/TrackingMonitor/data/TrackingMonitor.cfi"
+  #names & designations  
+    replace ALCARECOTkAlUpsilonMuMuDQM.TrackProducer = "ALCARECOTkAlUpsilonMuMu"
+    replace ALCARECOTkAlUpsilonMuMuDQM.AlgoName = "ALCARECOTkAlUpsilonMuMu"
+    replace ALCARECOTkAlUpsilonMuMuDQM.FolderName = "TkAlUpsilonMuMu"
+  #sizes
+    replace ALCARECOTkAlUpsilonMuMuDQM.TkSizeBin = 5
+    replace ALCARECOTkAlUpsilonMuMuDQM.TkSizeMin = 0
+    replace ALCARECOTkAlUpsilonMuMuDQM.TkSizeMax = 5
+    replace ALCARECOTkAlUpsilonMuMuDQM.TrackPtBin = 100
+    replace ALCARECOTkAlUpsilonMuMuDQM.TrackPtMin = 0
+    replace ALCARECOTkAlUpsilonMuMuDQM.TrackPtMax = 30
+
+#TkAlBeamHalo
+module ALCARECOTkAlBeamHaloDQM = TrackMon from "DQM/TrackingMonitor/data/TrackingMonitor.cfi"
+  #names & designations  
+    replace ALCARECOTkAlBeamHaloDQM.TrackProducer = "ALCARECOTkAlBeamHalo"
+    replace ALCARECOTkAlBeamHaloDQM.AlgoName = "ALCARECOTkAlBeamHalo"
+    replace ALCARECOTkAlBeamHaloDQM.FolderName = "TkAlBeamHalo"
+  #sizes
+    replace ALCARECOTkAlBeamHaloDQM.TkSizeBin = 5
+    replace ALCARECOTkAlBeamHaloDQM.TkSizeMin = 0
+    replace ALCARECOTkAlBeamHaloDQM.TkSizeMax = 5
+
+#TkAlMinBias
+module ALCARECOTkAlMinBiasDQM = TrackMon from "DQM/TrackingMonitor/data/TrackingMonitor.cfi"
+  #names & designations  
+    replace ALCARECOTkAlMinBiasDQM.TrackProducer = "ALCARECOTkAlMinBias"
+    replace ALCARECOTkAlMinBiasDQM.AlgoName = "ALCARECOTkAlMinBias"
+    replace ALCARECOTkAlMinBiasDQM.FolderName = "TkAlMinBias"
+  #sizes
+    replace ALCARECOTkAlMinBiasDQM.TkSizeBin = 70
+    replace ALCARECOTkAlMinBiasDQM.TkSizeMin = 0
+    replace ALCARECOTkAlMinBiasDQM.TkSizeMax = 70
+    replace ALCARECOTkAlMinBiasDQM.TrackPtBin = 100
+    replace ALCARECOTkAlMinBiasDQM.TrackPtMin = 0
+    replace ALCARECOTkAlMinBiasDQM.TrackPtMax = 30
+
+#TkAlMuonIsolated
+module ALCARECOTkAlMuonIsolatedDQM = TrackMon from "DQM/TrackingMonitor/data/TrackingMonitor.cfi"
+  #names & designations  
+    replace ALCARECOTkAlMuonIsolatedDQM.TrackProducer = "ALCARECOTkAlMuonIsolated"
+    replace ALCARECOTkAlMuonIsolatedDQM.AlgoName = "ALCARECOTkAlMuonIsolated"
+    replace ALCARECOTkAlMuonIsolatedDQM.FolderName = "TkAlMuonIsolated"
+  #sizes			    
+    replace ALCARECOTkAlMuonIsolatedDQM.TkSizeBin = 5
+    replace ALCARECOTkAlMuonIsolatedDQM.TkSizeMin = 0
+    replace ALCARECOTkAlMuonIsolatedDQM.TkSizeMax = 5
+    replace ALCARECOTkAlMuonIsolatedDQM.TrackPtBin = 100
+    replace ALCARECOTkAlMuonIsolatedDQM.TrackPtMin = 0
+    replace ALCARECOTkAlMuonIsolatedDQM.TrackPtMax = 100

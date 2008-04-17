@@ -1,0 +1,15 @@
+#DQM services
+include "DQMServices/Components/data/MEtoEDMConverter.cfi"
+
+service = DQMStore {
+  untracked string referenceFileName = "" 
+  untracked int32 verbose = 0 
+}
+
+#Subsystem Includes 
+
+# Tracker Alignment
+  include "DQMOffline/Configuration/data/ALCARECOTkAlDQM.cff"
+
+# unfortunally the ALCARECOTkAl-Producers can not go here because they are filters.
+path pathALCARECODQM = {MEtoEDMConverter}
