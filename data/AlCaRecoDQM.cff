@@ -1,10 +1,6 @@
 #DQM services
+#be sure to include the standard sequences
 include "DQMServices/Components/data/MEtoEDMConverter.cfi"
-
-service = DQMStore {
-  untracked string referenceFileName = "" 
-  untracked int32 verbose = 0 
-}
 
 #Subsystem Includes 
 
