@@ -1,6 +1,8 @@
 include "DQMOffline/Muon/data/muonMonitors.cff"
-include "DQMOffline/Ecal/data/ecal_dqm_sourceclient-offline.cff"
-sequence DQMOffline = {ecal_dqm_sourceclient-offline1,ecal_dqm_sourceclient-offline2,muonMonitorsAndQualityTests}
+include "DQMOffline/Ecal/data/ecal_dqm_source-offline.cff"
+include "DQM/SiStripMonitorClient/data/SiStripSourceConfigTier0.cff"
 
+sequence DQMOffline = {SiStripDQMTier0,ecal_dqm_source-offline,muonMonitors}
+sequence DQMOffline_woTracker = {ecal_dqm_source-offline,muonMonitors}
 
 
