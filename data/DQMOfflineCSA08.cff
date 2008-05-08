@@ -1,0 +1,18 @@
+include "RecoMuon/TrackingTools/data/MuonServiceProxy.cff"
+include "DQMOffline/Muon/data/muonAnalyzer.cfi"
+module staMonitor =MonitorTrackSTACosmicMuons from "DQM/TrackingMonitor/data/MonitorTrackSTACosmicMuons.cfi"
+replace staMonitor.TrackProducer="standAloneMuons"
+
+module glbMonitor =MonitorTrackGLBCosmicMuons from "DQM/TrackingMonitor/data/MonitorTrackGLBCosmicMuons.cfi"
+replace glbMonitor.TrackProducer="globalMuons"
+
+module tkMonitor =MonitorTrackTKCosmicMuons from "DQM/TrackingMonitor/data/MonitorTrackTKCosmicMuons.cfi"
+replace tkMonitor.TrackProducer="generalTracks"
+
+sequence lhcMuonsMonitors = {staMonitor,glbMonitor,tkMonitor,muonAnalyzer }
+
+
+include  "DQMOffline/JetMET/data/jetMETAnalyzer.cff"
+
+sequence DQMOffline = {lhcMuonsMonitors,jetMETAnalyzer}
+
