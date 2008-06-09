@@ -5,5 +5,5 @@ include "DQM/HcalMonitorModule/data/hcal_dqm_client-fileT0.cff"
 
 
 sequence DQMOffline_SecondStep = {ecal_dqm_client_offline,muonQualityTests,hcalOfflineDQMClient}
-sequence DQMOffline_SecondStep_woHCAL = {ecal_dqm_client_offline,muonQualityTests}
+sequence DQMOffline_SecondStep_woHcal = {ecal_dqm_client_offline,muonQualityTests}
 
