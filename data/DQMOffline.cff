@@ -2,11 +2,9 @@ include "DQMOffline/Muon/data/muonMonitors.cff"
 include "DQMOffline/Ecal/data/ecal_dqm_source-offline.cff"
 include "DQM/SiStripMonitorClient/data/SiStripSourceConfigTier0.cff"
 include "DQM/HcalMonitorModule/data/hcal_dqm_source-fileT0.cff"
-include  "DQMOffline/JetMET/data/jetMETAnalyzer.cff"
+include "DQMOffline/JetMET/data/jetMETAnalyzer.cff"
+include "DQM/SiPixelCommon/data/SiPixelOfflineDQM_source.cff"
 
-sequence DQMOffline = {SiStripDQMTier0,ecal_dqm_source-offline7,muonMonitors,jetMETAnalyzer,hcalOfflineDQMSource}
-sequence DQMOffline_woTracker = {ecal_dqm_source-offline7,muonMonitors,jetMETAnalyzer,hcalOfflineDQMSource}
-#sequence DQMOffline_woCSC = {SiStripDQMTier0,ecal_dqm_source-offline,muonMonitors_woCSC,jetMETAnalyzer}
-#sequence DQMOffline_woTrackerAndCSC = {ecal_dqm_source-offline,muonMonitors_woCSC,jetMETAnalyzer}
-#sequence DQMOffline_woTrackerCSCJetMET = {ecal_dqm_source-offline,muonMonitors_woCSC}
+sequence DQMOffline        = {SiStripDQMTier0,ecal_dqm_source_offline7,muonMonitors,jetMETAnalyzer,hcalOfflineDQMSource,siPixelOfflineDQM_source}
+sequence DQMOffline_woHcal = {SiStripDQMTier0,ecal_dqm_source_offline7,muonMonitors,jetMETAnalyzer,siPixelOfflineDQM_source}
 
