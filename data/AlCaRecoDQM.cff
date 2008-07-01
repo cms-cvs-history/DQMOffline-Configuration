@@ -6,6 +6,7 @@ include "DQMServices/Components/data/MEtoEDMConverter.cfi"
 
 # Tracker Alignment
   include "DQMOffline/Configuration/data/ALCARECOTkAlDQM.cff"
+  include "DQMOffline/Configuration/data/ALCARECOEcalCalDQM.cff"
 
 # unfortunally the ALCARECOTkAl-Producers can not go here because they are filters.
 path pathALCARECODQM = {MEtoEDMConverter}
