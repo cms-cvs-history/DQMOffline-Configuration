@@ -8,5 +8,6 @@ include "DQMOffline/Trigger/data/FourVectorHLTOffline.cfi"
 include "DQMOffline/Trigger/data/L1TMonitor_dqmoffline.cff"
 
 sequence DQMOffline        = {SiStripDQMTier0,ecal_dqm_source_offline7,muonCosmicMonitors,jetMETAnalyzer,hcalOfflineDQMSource,siPixelOfflineDQM_source,l1tmonitor, hltResults}
+sequence DQMOffline_woPixels        = {SiStripDQMTier0,ecal_dqm_source_offline7,muonCosmicMonitors,jetMETAnalyzer,hcalOfflineDQMSource,l1tmonitor, hltResults}
 sequence DQMOffline_woHcal = {SiStripDQMTier0,ecal_dqm_source_offline7,muonCosmicMonitors,jetMETAnalyzer,siPixelOfflineDQM_source,l1tmonitor, hltResults}
 
