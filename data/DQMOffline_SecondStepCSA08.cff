@@ -1,7 +1,0 @@
-include "DQMOffline/Muon/data/muonQualityTests.cff"
-#include "DQMOffline/Ecal/data/ecal_dqm_client-offline.cff"
-#include "DQM/SiStripMonitorClient/data/SiStripSourceConfigTier0.cff"
-
-sequence DQMOffline_SecondStep = {muonQualityTests}
-
-
