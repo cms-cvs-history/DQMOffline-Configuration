@@ -12,6 +12,7 @@ from DQM.RPCMonitorClient.RPCTier0Source_cff import *
 from DQM.CSCMonitorModule.csc_dqm_sourceclient_offline_cff import *
 from DQM.EcalPreshowerMonitorModule.es_dqm_source_offline_cff import *
 from DQM.BeamMonitor.AlcaBeamMonitor_cff import *
+from DQM.CastorMonitor.castor_dqm_sourceclient_offline_cff import *
 
 DQMOfflinePreDPG = cms.Sequence( dqmDcsInfo *
                                  ecal_dqm_source_offline *
@@ -21,7 +22,8 @@ DQMOfflinePreDPG = cms.Sequence( dqmDcsInfo *
                                  dtSources *
                                  rpcTier0Source *
                                  cscSources *
-                                 es_dqm_source_offline )
+                                 es_dqm_source_offline *
+                                 castorSources )
 
 DQMOfflineDPG = cms.Sequence( DQMOfflinePreDPG *
                               DQMMessageLogger )
@@ -33,6 +35,8 @@ from DQMOffline.Trigger.DQMOffline_Trigger_cff import *
 from DQMOffline.RecoB.PrimaryVertexMonitor_cff import *
 from DQMOffline.RecoB.dqmAnalyzer_cff import *
 from DQM.Physics.DQMPhysics_cff import *
+
+triggerOfflineDQMSource.remove(jetMETHLTOfflineSource)
 
 DQMOfflinePrePOG = cms.Sequence( muonMonitors *
                                  jetMETDQMOfflineSource *
